@@ -1,0 +1,242 @@
+
+#kontener{
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  
+  background: #07E0CA;
+}
+
+#gora{
+  position: absolute;
+width: 1920px;
+height: 328px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+}
+
+#gracz1{
+  box-sizing: border-box;
+
+position: absolute;
+width: 405px;
+height: 78px;
+left: 76px;
+top: 64px;
+
+background: #FFFFFF;
+border: 1px solid #AFAFAF;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+#gracz2{
+  box-sizing: border-box;
+
+position: absolute;
+width: 405px;
+height: 78px;
+left: 501px;
+top: 64px;
+
+background: #FFFFFF;
+border: 1px solid #AFAFAF;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+.gracz{
+  position: absolute;
+width: 57px;
+height: 30px;
+left: 30px;
+top: 24px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #AFAFAF;
+}
+
+h1{
+  position: absolute;
+width: 126px;
+height: 30px;
+left: 1282px;
+top: 88px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #AFAFAF;
+}
+
+#start{
+  position: absolute;
+width: 202.5px;
+height: 78px;
+left: 76px;
+top: 186px;
+
+background: #07E0CA;
+border-radius: 10px;
+border: 1px solid #07E0CA;
+
+
+font-family: 'Proxima Nova Alt';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+
+#wyborGracza{
+  position: absolute;
+  width: 598px;
+  height: 102px;
+  left: 661px;
+  top: 383px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#g1{
+/* position: absolute; */
+margin: 15px;
+width: 278px;
+height: 74px;
+left: 675px;
+top: 397px;
+
+background: #07E0CA;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+border: 1px solid #07E0CA;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+#g2{
+  box-sizing: border-box;
+
+/* position: absolute; */
+width: 278px;
+height: 74px;
+left: 967px;
+top: 397px;
+
+background: #FFFFFF;
+border: 1px solid #AFAFAF;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #07E0CA;
+}
+
+.gameButton{
+  position: absolute;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  color: #07E0CA;
+  font-size: 60px;
+  width: 150px;
+  height: 150px;
+  background: #FFFFFF;
+border-radius: 10px;
+border: 1px solid white;
+}
+
+#a{
+left: 725px;
+top: 540px;
+}
+#b{
+left: 885px;
+top: 540px;
+}
+#c{
+  left: 1045px;
+top: 540px;
+}
+#d{
+  left: 725px;
+top: 700px;
+}
+#e{
+  left: 885px;
+top: 700px;
+}
+#f{
+  left: 1045px;
+top: 700px;
+}
+#g{
+  left: 725px;
+top: 860px;
+}
+#h{
+  left: 885px;
+top: 860px;
+}
+#i{
+  left: 1045px;
+top: 860px;
+}
+
+#v2{
+  position: absolute;
+width: 25.5px;
+height: 25.5px;
+left: 195px;
+top: 24px;
+
+border: 6px solid #FFFFFF;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#kolko{
+  box-sizing: border-box;
+
+position: absolute;
+width: 34px;
+height: 34px;
+left: 165.5px;
+top: 20px;
+
+border: 6px solid #07E0CA;
+}

@@ -76,3 +76,11 @@ let selektor = document.querySelectorAll("p")
 let selektor = document.getElementsByClassName("nazwaKlasy")
 let selektor = document.querySelectorAll(".nazwaKlasy")
 ```
+
+### innerHTML vs textContent
+
+`textContent` - traktuje wszystko jako czysty tekst
+`innerHTML` - traktuje wszystko jako kod HTML
+
+`element.attribute` -> nowa wartość zmienia wartość atrybutu elementu HTML
+`element.style.property` -> nowa wartość zmienia wartość właściwości CSS
