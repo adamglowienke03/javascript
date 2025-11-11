@@ -84,3 +84,34 @@ let selektor = document.querySelectorAll(".nazwaKlasy")
 
 `element.attribute` -> nowa wartość zmienia wartość atrybutu elementu HTML
 `element.style.property` -> nowa wartość zmienia wartość właściwości CSS
+
+---
+### Rodzaje zdarzeń
+**Typ zdarzenia**
+- click
+- mouseover
+
+**Element zdarzenia**
+- tekst
+- przycisk
+- formularz
+
+**Funkcja obsługująca zdarzenie**
+- listener
+- handler
+
+**Przypisanie funkcji pod zdarzenie:**
+```js
+document.getElementById("g1").onclick = () => {
+    alert("Kliknięto przycisk 1")
+}
+```
+**Użycie funkcji addEventListener:**
+```js
+let pole = document.getElementById("g2")
+pole.addEventListener("click", () => {
+    alert("Kliknięto przycisk 2")
+})
+// lub
+pole.addEventListener("click", nazwaFunkcji)
+```
