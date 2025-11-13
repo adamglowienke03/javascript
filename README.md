@@ -115,3 +115,17 @@ pole.addEventListener("click", () => {
 // lub
 pole.addEventListener("click", nazwaFunkcji)
 ```
+
+### jQuery
+To biblioteka JavaScript, która upraszcza manipulację DOM, obsługę zdarzeń i animacje.
+
+```js
+$(document).ready(function() {
+    $("#przycisk").click(function() {
+        alert("Kliknięto przycisk!");
+    });
+});
+```
+`$(document).ready(function() { ... })` - kod wewnątrz tej funkcji zostanie wykonany, gdy cały dokument HTML zostanie w pełni załadowany i przetworzony.
+
+`$("#przycisk")` - działa jak `document.getElementById("przycisk")`, wybiera element o podanym ID.
