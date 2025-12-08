@@ -225,3 +225,60 @@ Oto zestawienie najważniejszych klas z Twojego kodu w formacie Markdown, gotowe
 * **`h-[300px]`** – **Arbitrary Value**. Użycie nawiasów kwadratowych `[]` pozwala wpisać własną wartość spoza skali Tailwinda.
 * **`[&_div]`** – **Arbitrary Variant**. Pozwala stylować bezpośrednio dzieci elementu.
     * `[&_div]:flex` – Oznacza: *"Dla każdego diva wewnątrz tego elementu ustaw `display: flex`"*.
+
+
+## Next.js
+**Komponenty:**
+- Serwerowe
+	- Renderowane po stronie serwera
+	- Renderują się pierwsze
+	- Domyślnie używane w Next.js
+- Klienckie
+	- Część statyczna (HTML) renderowana po stronie serwera
+	- Renderują się po komponentach serwerowych
+	- Aby ich użyć należy dopisać dyrektywę na górze komponentu: `'use client'`, wszystkie komponenty potomne dziedziczą tą dyrektywę i stają się one automatycznie klienckimi
+
+### Routing (folder app)
+
+**Miękka nawigacja** - przejście do konkretnej ścieżki bez odświeżenia strony, tak jak ma to miejsce w aplikacjach SPA. Podczas takiej nawigacji stan komponentów nie ulega zmianie.
+
+**Twarda nawigacja** - przejście do konkretnej strony, następuje poprzez jej pełne przeładowanie, tak jak ma to miejsce w tradycyjnych stronach internetowych. Stan komponentów ulega resetowi
+
+Foldery:
+Pojedyńczy folder to segment. Tworzą ścieżkę w aplikacji. Zawiera pliki które definiują logikę segmentu. Tworzy logikę zachowania się nawigacji
+
+Nawigacja pomiędzi ścieżkami (miękka):
+ - Komponent <Link/>
+ ```tsx
+import Link from 'next/link'
+
+export default function HomePage() {
+	return <Link href="/about">Go to About Page</Link>;
+ ```
+- Hook `useRouter()`
+ ```tsx
+'use client';
+import { useRouter } from 'next/navigation';
+
+export default function HomePage() {
+	const router = useRouter();
+
+	return (
+		<button onClick={() => router.push('/about')}>
+			Go to About Page
+		</button>
+	);
+}
+ ```
+
+- Funkcja `redirect()`
+ ```tsx
+import { redirect } from 'next/navigation';
+export default function HomePage() {
+	if(!isLoggedIn)
+	{
+		redirect('/login');
+	}
+	
+}
+ ```
